@@ -5,6 +5,7 @@
     --color-light-gray: #f5f5f5;
     --color-black: #191919;
     --color-white: #ffffff;
+    --color-light-black: #211f1f;
 }
 /*Configuração Global*/
 *{
@@ -15,14 +16,39 @@
 /*Configuração do corpo*/
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--color-light-gray);
+    font-size: 18px;
+
 }
 
 p{
     margin-bottom: 20px;
 }
+/*botão*/
+.btn{
+    border-radius: 30px;
+    padding: 17px 40px;
+    font-weight: 700;
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 20px 0;
+}
+/*botão passando o mouse*/
+.btn:hover,
+.btn:focus{
+    border-color: var(--color-primary-hover);
+    background-color: var(--color-primary);
+    transition: all 0.3s;
+}
 
+/*Divisor*/
 .divider{
+    border: 1px solid var--color-primary;
+    width: 100px;
+    max-width: 20px auto;
 
 }
 
@@ -30,18 +56,50 @@ p{
     margin: 0 auto;
     max-width: 1024px;
 }
-
-#page-reader{
-
+/*div header*/
+#page-header{
+    position: relative;
+    background-color: var(--color-light-black);
+    background-image: url(/img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
 }
 
-#page-reader-logo{
+.background-overlay{
+    background-color: var(--color-light-black);
+    opacity: 0.65;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+/*div imagem*/
+#page-header #page-header-logo img{
+    width: 150px;
+    height: 42px;
+
+}
+/*conteudo*/
+#page-header-content{
+    color: var(--color-white);
+    text-align: center;
+    padding: 200px 0px;
     
 }
+/*h1*/
+#page-header #page-header-content h1{
+    font-size: 72px;
 
-#page-reader-content{
-    
 }
+/*h2*/
+#page-header #page-header-content h2{
+    font-size: 32px;
+}
+
 
 
 
