@@ -1,0 +1,51 @@
+/*variavel*/
+:root{
+    --color-primary: #fb2056;
+    --color-primary-hover: #da1c4b;
+    --color-light-gray: #f5f5f5;
+    --color-black: #191919;
+    --color-white: #ffffff;
+}
+/*Configuração Global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Configuração do corpo*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-light-gray);
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+.divider{
+
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+#page-reader{
+
+}
+
+#page-reader-logo{
+    
+}
+
+#page-reader-content{
+    
+}
+
+
+
+
+
+
+
