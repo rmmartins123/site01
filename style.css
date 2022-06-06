@@ -67,8 +67,11 @@ p{
     padding: 20px;
 }
 
+#page-header container{
+    position: relative;
+}
+
 .background-overlay{
-    background-color: var(--color-light-black);
     opacity: 0.65;
     position: absolute;
     height: 100%;
@@ -98,6 +101,27 @@ p{
 /*h2*/
 #page-header #page-header-content h2{
     font-size: 32px;
+}
+
+#quote{
+    background-color: #918d8d;
+    padding: 40px 0;
+}
+
+#quote p{
+    color: var(--color-white);
+    
+}
+
+#quote.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#quote #quote-content{
+
 }
 
 
