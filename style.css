@@ -25,10 +25,10 @@ p{
 }
 /*botão*/
 .btn{
-    border-radius: 30px;
+    border-radius: 40px;
     padding: 17px 40px;
     font-weight: 700;
-    border-color: var(--color-primary);
+    border-color: black;
     background-color: var(--color-primary);
     color: var(--color-white);
     text-decoration: none;
