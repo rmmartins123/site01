@@ -22,6 +22,7 @@ body{
 
 p{
     margin-bottom: 20px;
+    text-align: center;
 }
 /*botão*/
 .btn{
@@ -37,8 +38,7 @@ p{
     margin: 20px 0;
 }
 /*botão passando o mouse*/
-.btn:hover,
-.btn:focus{
+.btn:hover{
     border-color: var(--color-primary-hover);
     background-color: var(--color-primary);
     transition: all 0.3s;
@@ -67,10 +67,6 @@ p{
     padding: 20px;
 }
 
-#page-header container{
-    position: relative;
-}
-
 .background-overlay{
     opacity: 0.65;
     position: absolute;
@@ -78,7 +74,6 @@ p{
     width: 100%;
     top: 0;
     left: 0;
-
 }
 /*div imagem*/
 #page-header #page-header-logo img{
@@ -121,8 +116,34 @@ p{
 }
 
 #quote #quote-content{
-
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
 }
+
+#upcoming-events{
+    padding: 100px 0;
+}
+
+#upcoming-events #upcoming-events-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px
+}
+
+#upcoming-events #upcoming-events-content .event{
+    text-align: center;
+    width: 450px;
+}
+
+#upcoming-events #upcoming-events-content .
+img{
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 10px 10px 0 1px rgb(0 0 0 /7%);
+}
+
+
 
 
 
