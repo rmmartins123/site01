@@ -8,21 +8,17 @@
     --color-light-black: #211f1f;
 }
 /*Configuração Global*/
-*{
+*,p{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 700;
 }
 /*Configuração do corpo*/
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 
-}
-
-p{
-    margin-bottom: 20px;
-    text-align: center;
 }
 /*botão*/
 .btn{
@@ -31,14 +27,14 @@ p{
     font-weight: 700;
     border-color: black;
     background-color: var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-black);
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
     margin: 20px 0;
 }
 /*botão passando o mouse*/
-.btn:hover{
+.btn:hover  .btn:focus {
     border-color: var(--color-primary-hover);
     background-color: var(--color-primary);
     transition: all 0.3s;
@@ -136,12 +132,98 @@ p{
     width: 450px;
 }
 
-#upcoming-events #upcoming-events-content .
+#upcoming-events #upcoming-events-content .event 
 img{
     border-radius: 4px;
     width: 100%;
-    box-shadow: 10px 10px 0 1px rgb(0 0 0 /7%);
+    box-shadow: 10px 10px 0 1px rgba(0, 0, 0, 0.071);
 }
+
+#upcoming-events #upcoming-events-content .event h3 {
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.section-title{
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#explore{
+    background-image: url(/img/explore-bg.jpg);
+    background-repeat: repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+
+#explore #explore-content{
+    color: var(--color-white);
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#explore #explore-content div{
+    width: 500px;
+}
+
+#explore #explore-content ,.section-title{
+    text-align: left;
+}
+
+#explore #explore-content .divider{
+    margin-left: 0;
+}
+
+#upcoming-tours{
+    padding: 100px;
+}
+
+#upcoming-tours .container{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+#upcoming-tours .container div{
+    flex: 1;
+}
+
+#upcoming-tours .container div img{
+    width: 100%;
+}
+
+#upcoming-tours .upcoming-tours-img{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#upcoming-tours .divider{
+    margin-left: 0;
+}
+
+#page-footer{
+    background-color: var(--color-light-black);
+    color: var(--color-white);
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
